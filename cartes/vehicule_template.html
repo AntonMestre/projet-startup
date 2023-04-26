@@ -1,7 +1,125 @@
-<div style="margin-top: 20px;">
-    <div style="width:310px;
-                height:500px;
-                border-radius: 30px;
-                background: #005B8E;">
+<div class="card">
+    <div class="header">
+      <img src="../icons/lightning.svg" alt="lightning" />
+      <div class="header-right">
+        <span class="number">2</span>
+        <img src="../icons/shoe.svg" alt="shoe" />
+      </div>
     </div>
-</div>
+    <div class="svg-container">
+      <img src="../icons/cargo-bike.svg" alt="cargo-bike" />
+    </div>
+    <div class="title">
+      <h2>Card Title</h2>
+    </div>
+    <div class="specs">
+      <div class="spec-box">
+        <h3>Buy</h3>
+        <div class="spec-icons">
+          <img src="../icons/money.svg" alt="money icon" />
+          <img src="../icons/leaf.svg" alt="leaf icon" />
+          <img src="../icons/lightning.svg" alt="lightning icon" />
+          <img src="../icons/muscle.svg" alt="muscle icon" />
+        </div>
+      </div>
+      <div class="spec-box">
+        <h3>Usage</h3>
+        <div class="spec-icons">
+          <img src="../icons/money.svg" alt="money icon" />
+          <img src="../icons/leaf.svg" alt="leaf icon" />
+          <img src="../icons/lightning.svg" alt="lightning icon" />
+          <img src="../icons/muscle.svg" alt="muscle icon" />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<style>
+    .card {
+  width: 310px;
+  height: 500px;
+  border-radius: 30px;
+  background: #005B8E;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.svg-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-container img {
+  width: 75%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+}
+
+.title h2 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.spec-box {
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.spec-box h3 {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.spec-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.spec-icons img {
+  width: 25%;
+  height: auto;
+}
+
+
+</style>
